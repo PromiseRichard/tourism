@@ -1,0 +1,653 @@
+*{
+   font-family: 'Comfortaa', cursive;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+/* STLYING THE RAINBOW  */
+.red{color: red;}
+.orange{color: orange;}
+.yellow{color: yellow;}
+.green{color: green;}
+.blue{color: blue;}
+.indigo{color: indigo;}
+.violet{color: violet;}
+
+/* HOVER EFFECTS OF RAINBOW */
+.red:hover{color: violet;}
+.orange:hover{color: indigo;}
+.yellow:hover{color: blue;}
+.blue:hover{color: yellow;}
+.indigo:hover{color: orange;}
+.violet:hover{color: red;}
+
+marquee{
+   font-size: 20px;
+   font-style: italic;
+   font-weight: 500;
+   color: black;
+}
+.container{
+   padding-top: 160px;
+}
+
+section{
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 32px;
+}
+
+.heading{
+   font-family: sans-serif;
+   font-style: italic;
+   color: darkgreen;
+   text-shadow:  0 0 3px darkred;
+   text-align: center;
+   margin-bottom: 64px;
+}
+
+.btn{
+   display: block;
+   border: 5px solid;
+   border-radius: 8px;
+   padding: 19.2px 48px;
+   background: gray;
+   color: green;
+   cursor: pointer;
+   text-align: center;
+   font-size: 19.8px;
+   margin-top: 16px;
+   backdrop-filter: blur(8px);
+   transition: .2s linear;
+}
+
+.btn:hover, .active{
+   background: transparent;
+   color: white;
+}
+.head{
+   position:absolute;
+   top: 0; right: 0; left: 0;
+   background: transparent
+}
+.head .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 24px;
+}
+.head .flex .logo{
+   font-size: 50px;
+}
+
+.head .flex .navbar a{
+   margin-left: 32px;
+   font-size: 20px;
+   transition: .2s linear;
+}
+
+.head .flex .navbar a:hover{
+   color: white;
+}
+
+#menu-btn{
+   color: white;
+   font-size: 30px;
+   cursor: pointer;
+   display: none;
+}
+
+.home{
+   background: url('../image/Abuja_Millenium_Park~2.jpg') no-repeat rgba(0,0,0,.5);
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-blend-mode: multiply;
+}/
+.home{
+   height: 100%;
+   background: rgba(0,0,0,.5);
+}
+.logo{
+   text-shadow: 0 0 3px darkred;
+   
+}
+.home .flex{
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.home .flex form{
+   background-color: transparent;
+   border-radius: 20px;
+   padding: 32px;
+   width: 800px;
+   backdrop-filter: blur(6.4px);
+}
+
+.home .flex form h3{
+   font-size: 20px;
+   padding-bottom: 16px;
+   text-align: center;
+}
+
+.home .flex form p{
+   padding-top: 16px;
+   font-size: 18px;
+}
+
+.home .flex form .box{
+   width: 100%;
+   border-radius: 8px;
+   padding: 27.2px;
+   font-size: 11.7px;
+   color: darkgreen;
+   text-transform: none;
+   background: black;
+   margin: 16px 0;
+}
+
+.home .flex form .box::placeholder{
+   color: darkgreen;
+}
+
+/* ABOUT SECTION */
+.about{
+   background: url('../image/about us.jpg') no-repeat rgba(0,0,0,.5);
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-blend-mode: multiply;
+}
+
+.about .details{
+   border-radius: 8px;
+   background: url('../image/about_why_choose_us.jpg') no-repeat rgba(0,0,0,.5);
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 32px;
+   min-height: 60vh;
+}
+
+.about .details .box{
+   width: 800px;
+   padding:48px 32px;
+   text-align: center;
+   backdrop-filter: blur(6.4px);
+   border-radius: 8px;
+}
+
+.about .details .box h3{
+   padding-bottom: 16px;
+   font-size: 25px;
+}
+
+.about .details .box p{
+   padding: 16px 0;
+   font-size: 19px;
+   line-height: 2;
+}
+
+.about .details .box .btn{
+   display: inline-block;
+   width: auto;
+}
+
+.about .grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 300px);
+   align-items: flex-start;
+   justify-content: center;
+   gap: 24px;
+   margin-top: 32px;
+}
+
+.about .grid .box{
+   padding: 32px;
+   text-align: center;
+   backdrop-filter: blur(8px);
+   border-radius: 60px;
+}
+
+.about .grid .box img{
+   height: 200px;
+   /* justify-content: center; */
+   object-position: 2px;
+   transition: .2s linear;
+}
+
+.about .grid .box h3{
+   padding: 32px 0;
+   font-size: 25px;
+}
+
+.about .grid .box p{
+   line-height: 2;
+   font-size: 18px;
+}
+
+.about .grid .box:hover{
+   background-color: white
+}
+
+.about .grid .box:hover img{
+   transform: scale(1.1);
+}
+
+.reviews{
+   background: url('../image/review.jpg') no-repeat rgba(0,0,0,.5);
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-blend-mode: multiply;
+}
+
+.reviews .grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 320px);
+   align-items: flex-start;
+   justify-content: center;
+   gap: 24px;
+}
+
+.reviews .grid .box{
+   padding: 32px;
+   text-align: center;
+   backdrop-filter: blur(8px);
+   border-radius: 60px;
+}
+
+.reviews .grid .box img{
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 16px;
+}
+
+.reviews .grid .box h3{
+   font-size: 19px;
+   color: yellow;
+}
+
+.reviews .grid .box p{
+   color: white;
+   padding: 16px 0;
+   line-height: 2;
+   font-size: 15px;
+}
+
+.reviews .grid .box .stars{
+   margin-top: 16px;
+}
+
+.reviews .grid .box .stars i{
+   font-size: 1.8rem;
+   color: white;
+}
+
+.reviews .grid .box:hover{
+   background-color:black;
+   transition: ease-in-out 0.2s;
+}
+
+.destinations{
+   background: url('../image/destination.jpg') no-repeat rgba(0,0,0,0.5);
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-blend-mode: multiply;
+}
+
+.destinations .grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 320px);
+   align-items: flex-start;
+   justify-content: center;
+   gap: 32px;
+}
+
+.destinations .grid .box{
+   position: relative;
+   height: 300px;
+   overflow: hidden;
+   border-radius: 60px;
+   border-style:dotted;
+   border-color: red;
+}
+
+.destinations .grid .box img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.destinations .grid .box h3{
+   position: absolute;
+   top: 0; left: 0;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   backdrop-filter: blur(8px);
+   transition: .2s linear;
+   opacity: 0;
+}
+
+.destinations .grid .box h3 span{
+   font-size: 19px;
+}
+
+.destinations .grid .box:hover h3{
+   opacity: 1;
+}
+
+/* contact */
+.contact{
+   background: url('../image/contact.jpg') no-repeat rgba(0,0,0,.5);
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-blend-mode: multiply;
+}
+
+.contact .row{
+   display: flex;
+   color: white;
+   flex-wrap: wrap;
+   gap: 32px;
+}
+
+.contact .row .auto{
+   font-size: 16px;
+   width: 100%;
+   flex: 1 1 ;
+   padding: 32px;
+   background-color: transparent;
+   border-radius: 60px;
+   backdrop-filter: blur(6.4px);
+}
+.contact .row .map{
+   width: 100%;
+   flex: 1 1;
+   padding: 32px;
+   background-color: transparent;
+   border-radius: 60px;
+   backdrop-filter: blur(6.4px);
+}
+.contact .row form{
+   padding: 32px;
+   border-radius: 60px;
+   backdrop-filter: blur(6.4px);
+}
+
+.contact .row form h3{
+   text-align: center;
+   font-size: 25px;
+   padding-bottom: 16px;
+}
+
+.contact .row label{
+   font-size: 21.5px;
+   font-style: italic;
+}
+
+.contact .row form .box{
+   width: 100%;
+   margin: 16px 0;
+   border-radius: 20px;
+   background-color: black;
+   padding: 16px;
+   font-size: 15px;
+   color: green;
+   text-transform: none;
+}
+
+.contact .row form .box::placeholder{
+   color:silver;
+   font-size: 12px;
+}
+
+.contact .row form textarea{
+   height: 15rem;
+   resize: none;
+}
+
+.contact .grid{
+   margin: 32px 0;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 320px);
+   justify-content: center;
+   gap: 32px;
+}
+
+.contact .grid .box{
+   padding:32px 16px;
+   background-color: transparent;
+   border-radius: 40px;
+   backdrop-filter: blur(8px);
+   text-align: center;
+}
+
+.contact .grid .box h3{
+   padding: 8px 0;
+   font-size: 25px;
+}
+
+.contact .grid .box a{
+   display: block;
+   padding-top: 16px;
+   font-size: 19px;
+   line-height: 1.5;
+   text-transform: none;
+}
+
+.contact .grid .box a:hover{
+   color: white;
+   text-decoration: underline;
+}
+.clr{
+   clear: both;
+}
+
+/* blog section */
+.blog{
+  padding: 90px;
+  font-size: 16px;
+  background:mistyrose;
+}
+.blog h1{
+   color: green;
+   padding: 20px;
+}
+.submit{
+   padding: 5px;
+   border: 5px solid green;
+   background: gray;
+   color: black;
+}
+.submit:hover{
+   background: white;
+}
+
+
+
+/* FOOTER SECTION */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+   margin: 0 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: white;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: green;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col p{
+   color: red;
+   font-size: 16px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: red;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: silver;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: gray;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: red;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: silver;
+	background:gold;
+}
+.last{
+   text-align: center;
+   margin-top: 50px;
+   bottom: 0;
+   width: 100%;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+/* responsiveness of the webpage */
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+   .heading{
+      font-size: 5rem;
+      margin-bottom: 3rem;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+   }
+
+   .head .flex{
+      position: relative;
+   }
+
+   .head .flex .navbar{
+      position: absolute;
+      top: 70%; left: 16%; right: 10%;
+      backdrop-filter: blur(6.4px);
+      background: gold;
+      border-radius: 60px;
+      transform: scale(0);
+      transform-origin: top right;
+      padding: 20px 16px;
+   }
+
+   .head .flex .navbar.active{
+      transform: scale(1);
+      transition: .2s linear;
+   }
+
+   .head .flex .navbar a{
+      color: red;
+      display: inline;
+      padding: 16px;
+      margin:8px 16px;
+      border-radius: 40px;
+   }
+
+
+
+   .heading{
+      font-size: 3rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .heading{
+      font-size: 2.5rem;
+   }
+
+}
+
+/* footer */
+/*responsive*/
+@media(max-width: 767px){
+   .footer-col{
+     width: 50%;
+     margin-bottom: 30px;
+ }
+ }
+ @media(max-width: 574px){
+   .footer-col{
+     width: 100%;
+ }
+ }
+ 
